@@ -1,16 +1,17 @@
 # purchase_log
 
-A new Flutter project.
+if on windows:
 
-## Getting Started
+In order to test the auto form filler, follow these steps:
+1) open power shell and run the following commands
+    irm https://ollama.com/install.ps1 | iex
+    ollama pull mistral
+    pip install ollama
+    ollama serve
+    ollama run mistral
+2) open another terminal and run 
+    uvicorn backend:app --reload
+3) open another terminal and finally run
+    flutter run -d chrome
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Eventually the backend.py and the LLM will run non-locally (i.e. on server or with API service)

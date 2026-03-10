@@ -1,0 +1,69 @@
+################################
+#   COSTCO WHOLESALE #0472     #
+#   2000 N Elston Ave          #
+#   Chicago, IL 60614          #
+#   (773) 889-7400             #
+################################
+
+WAREHOUSE RECEIPT
+
+Member: Jessica Martinez
+Member #: 1100-7734-2291-8
+Member Type: Executive (2% Reward)
+Cashier ID: EMP-3341  Register: 07
+Date: 11/08/2025   Time: 10:23 AM
+Transaction: 7734-0472-1108-00291
+
+--------------------------------
+ITEMS
+--------------------------------
+KIRKLAND OLIVE OIL 2L          17.99
+KIRKLAND MIXED NUTS 40OZ       22.49
+KIRKLAND SALMON 3LB            29.99
+CHARMIN BATH 30 MEGA           29.99
+KIRKLAND WAFFLES 72CT          10.99
+NATURE VALLEY BARS 48PK        15.99
+KIRKLAND BABY WIPES 900CT      22.99
+KIRKLAND VITAMIN D3 500CT      12.99
+PEETS COFFEE BEANS 2.5LB       18.99
+SARGENTO CHEESE 5LB            14.99
+KIRKLAND LAUNDRY PODS 152CT    21.99
+REYNOLDS WRAP FOIL 500FT       19.99
+KIRKLAND PROTEIN BARS 20PK     29.99
+ORGANIC STRAWBERRIES 2LB        6.99
+KIRKLAND CHICKEN BREAST 6LB    24.99
+--------------------------------
+SUBTOTAL:                      301.36
+TAX (10.25% IL):                30.89
+--------------------------------
+TOTAL:                         332.25
+--------------------------------
+PAYMENT: COSTCO CITI VISA
+  Card: ....5521
+  Auth: 992341
+  Contactless Tap Approved
+
+--------------------------------
+COSTCO MEMBERSHIP CENTER:
+  Your membership expires 03/2027
+  Renew at any warehouse or costco.com
+  Executive 2% reward tracked on this visit
+  Estimated reward: $6.64
+
+COSTCO PHARMACY: Mon-Fri 10-7, Sat 9:30-6
+COSTCO GAS: Open 6AM-9PM Daily
+FOOD COURT HOURS: 10AM-8:30PM
+
+RETURN POLICY: 100% Satisfaction Guaranteed
+  Most items returnable at any time.
+  Electronics: 90 day return window.
+  Cigarettes/Alcohol: not returnable by law.
+
+NEXT WAREHOUSE EVENT:
+  Member-Only Savings Event: 12/01 - 12/31
+  Holiday Hours: Dec 24 close 5PM, Dec 25 CLOSED
+
+costco.com | 1-800-774-2678
+################################
+THANK YOU FOR SHOPPING COSTCO!
+################################

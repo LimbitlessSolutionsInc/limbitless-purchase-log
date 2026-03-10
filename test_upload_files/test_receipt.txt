@@ -1,0 +1,74 @@
+================================================
+           BEST BUY - STORE #1042
+         4501 Harlem Road, Buffalo, NY 14226
+             Tel: (716) 835-2200
+================================================
+
+Transaction ID:   BB-20260223-998812
+Cashier:          Marcus T.
+Register:         04
+Date:             02/23/2026
+Time:             3:47 PM
+
+------------------------------------------------
+CUSTOMER LOYALTY MEMBER: John Doe
+Points Balance Before: 1,240 pts
+------------------------------------------------
+
+ITEMS PURCHASED:
+------------------------------------------------
+Samsung 65" QLED 4K TV         $1,199.99
+  SKU: 6501823  |  Dept: TVs
+  Warranty info: See insert #W-4421
+
+HDMI 2.1 Cable (6ft)              $24.99
+  SKU: 1029834  |  Dept: Accessories
+
+USB-C Hub (7-in-1)                $49.99
+  SKU: 3847291  |  Dept: Accessories
+
+AA Batteries (20-pack)            $14.99
+  SKU: 0091234  |  Dept: Accessories
+
+------------------------------------------------
+STORE ANNOUNCEMENTS:
+  * Spring Sale starts March 1st!
+  * New Geek Squad hours: Mon-Sat 10am-7pm
+  * Download the Best Buy app for exclusive deals
+  * Survey code: BBYOP-4421-XZ for $5 off next visit
+------------------------------------------------
+
+SUBTOTAL:                       $1,289.96
+TAX (8.75%):                      $112.87
+DISCOUNT (MEMBER10):             -$50.00
+GIFT CARD APPLIED:               -$100.00
+------------------------------------------------
+TOTAL:                          $1,252.83
+------------------------------------------------
+
+PAYMENT METHOD:
+  Visa ending in 4821
+  Auth Code: 009341
+  Chip Transaction - Approved
+
+------------------------------------------------
+RETURN POLICY:
+  Most items: 15 days
+  TVs & major appliances: 15 days
+  Opened software: Exchange only
+  For returns, bring this receipt and original packaging.
+  Questions? Visit bestbuy.com/returns or call 1-888-237-8289
+
+------------------------------------------------
+GEEK SQUAD PROTECTION:
+  Your TV is eligible for a 2-year Geek Squad
+  Protection Plan for just $149.99/yr.
+  Ask an associate or visit geeksquad.com
+
+------------------------------------------------
+THANK YOU FOR SHOPPING AT BEST BUY!
+     "Let's talk about what's possible."
+================================================
+* Keep receipt for warranty purposes *
+* Survey: bestbuy.com/survey | Code: 4421XZ *
+================================================

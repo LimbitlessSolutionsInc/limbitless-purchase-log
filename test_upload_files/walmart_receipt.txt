@@ -1,0 +1,31 @@
+Thank You For Shopping With Us!
+Walmart Supercenter #4521
+1234 East Colonial Dr
+Orlando, FL 32803
+Tel: (407) 555-8123
+
+Date: February 23, 2026
+Time: 7:42 PM
+Register: 12
+Cashier: 1847
+
+Customer:
+Daniel Lee
+
+----------------------------------------
+1  Organic Whole Milk        $4.89
+2  Large Brown Eggs          $6.50
+1  Rotisserie Chicken        $7.99
+1  Paper Towels (6 Pack)     $12.47
+----------------------------------------
+
+Subtotal:                   $31.85
+Tax:                         $2.23
+ORDER TOTAL:                 $34.08
+
+Payment Method: Visa
+Cardholder: Daniel Lee
+Auth Code: 839201
+
+Thank you for your purchase!
+Visit us at www.walmart.com
