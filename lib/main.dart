@@ -140,7 +140,7 @@ class _PurchaseLogPageState extends State<PurchaseLogPage> {
     });
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: const Row(children: [Icon(Icons.check_circle, color: Colors.white), SizedBox(width: 8), Text('Purchase saved!')]),
+        content: const Row(children: [Icon(Icons.check_circle, color: Colors.white), SizedBox(width: 8), Text('Purchase saved!', style: TextStyle(color: Colors.white))]),
         backgroundColor: const Color(0xFF2E7D32),
         behavior: SnackBarBehavior.floating,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
@@ -185,19 +185,18 @@ class _PurchaseLogPageState extends State<PurchaseLogPage> {
     final theme = Theme.of(context);
 
     return Scaffold(
-      backgroundColor: const Color(0xFFF4F6FB),
       appBar: AppBar(
         backgroundColor: const Color(0xFF2A94D4),
-        foregroundColor: Colors.white,
         elevation: 0,
         title: Row(children: [
           Container(
             padding: const EdgeInsets.all(6),
-            decoration: BoxDecoration(color: Colors.white.withOpacity(0.15), borderRadius: BorderRadius.circular(8)),
+            decoration: BoxDecoration(color: Colors.white.withOpacity(0.15), 
+            borderRadius: BorderRadius.circular(8)),
             child: const Icon(Icons.receipt_long, size: 20, color: Colors.white),
           ),
           const SizedBox(width: 10),
-          const Text("Purchase Log", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, letterSpacing: 0.4)),
+          const Text("Purchase Log", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18, letterSpacing: 0.4)),
         ]),
       ),
       body: loading
@@ -227,8 +226,8 @@ class _PurchaseLogPageState extends State<PurchaseLogPage> {
             // Search bar
             Container(
               decoration: BoxDecoration(
-                color: Colors.white,
                 borderRadius: BorderRadius.circular(14),
+                border: Border.all(color: const Color(0xFF616161), width: 1),
                 boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.06), blurRadius: 10, offset: const Offset(0, 3))],
               ),
               child: TextField(
@@ -236,8 +235,8 @@ class _PurchaseLogPageState extends State<PurchaseLogPage> {
                 onChanged: filterSearch,
                 decoration: InputDecoration(
                   hintText: "Search by item, purchaser, date, or vendor...",
-                  hintStyle: TextStyle(color: Colors.grey[400], fontSize: 14),
-                  prefixIcon: Icon(Icons.search, color: Colors.grey[400]),
+                  hintStyle: TextStyle(fontSize: 14),
+                  prefixIcon: Icon(Icons.search),
                   border: InputBorder.none,
                   contentPadding: const EdgeInsets.symmetric(vertical: 14, horizontal: 16),
                 ),
@@ -248,8 +247,8 @@ class _PurchaseLogPageState extends State<PurchaseLogPage> {
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white,
                   borderRadius: BorderRadius.circular(16),
+                  border: Border.all(color: const Color(0xFF616161), width: 1),
                   boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.06), blurRadius: 12, offset: const Offset(0, 4))],
                 ),
                 child: filteredPurchases.isEmpty
@@ -266,7 +265,6 @@ class _PurchaseLogPageState extends State<PurchaseLogPage> {
                             child: DataTable(
                               sortColumnIndex: _sortColumnIndex,
                               sortAscending: _isAscending,
-                              headingRowColor: WidgetStateProperty.all(const Color(0xFFF0F2FF)),
                               headingTextStyle: const TextStyle(
                                 color: Color(0xFF2A94D4),
                                 fontWeight: FontWeight.bold,
@@ -356,16 +354,19 @@ class _PurchaseLogPageState extends State<PurchaseLogPage> {
                   width: double.infinity,
                   height: 160,
                   decoration: BoxDecoration(
-                    color: _hoveringAdd ? const Color(0xFF2A94D4) : Colors.white,
+                    gradient: const LinearGradient(
+                      colors: [Color(0xFF2A94D4), Color(0xFF3949AB)],
+                      begin: Alignment.topLeft, end: Alignment.bottomRight,
+                    ),
+                    color: _hoveringAdd ? Colors.white : const Color(0xFF2A94D4),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: _hoveringAdd ? const Color(0xFF2A94D4) : const Color(0xFFBBCAFF),
+                      color: _hoveringAdd ? const Color(0xFFBBCAFF) : const Color(0xFF2A94D4),
                       width: 2,
                     ),
                     boxShadow: [BoxShadow(
                       color: _hoveringAdd
-                          ? const Color(0xFF2A94D4).withOpacity(0.25)
-                          : Colors.black.withOpacity(0.06),
+                          ? Colors.black.withOpacity(0.06) : const Color(0xFF2A94D4).withOpacity(0.25),
                       blurRadius: _hoveringAdd ? 20 : 10,
                       offset: const Offset(0, 5),
                     )],
@@ -375,11 +376,11 @@ class _PurchaseLogPageState extends State<PurchaseLogPage> {
                       duration: const Duration(milliseconds: 200),
                       padding: const EdgeInsets.all(12),
                       decoration: BoxDecoration(
-                        color: _hoveringAdd ? Colors.white.withOpacity(0.15) : const Color(0xFFE8EAF6),
+                        color: _hoveringAdd ? const Color(0xFFE8EAF6) : Colors.white.withOpacity(0.15),
                         shape: BoxShape.circle,
                       ),
                       child: Icon(Icons.add, size: 28,
-                        color: _hoveringAdd ? Colors.white : const Color(0xFF2A94D4)),
+                        color: _hoveringAdd ? const Color(0xFF2A94D4) : Colors.white),
                     ),
                     const SizedBox(height: 12),
                     AnimatedDefaultTextStyle(
@@ -387,7 +388,7 @@ class _PurchaseLogPageState extends State<PurchaseLogPage> {
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.bold,
-                        color: _hoveringAdd ? Colors.white : const Color(0xFF2A94D4),
+                        color: _hoveringAdd ? const Color(0xFF2A94D4) : Colors.white,
                       ),
                       child: const Text("Log a Purchase"),
                     ),
@@ -396,7 +397,7 @@ class _PurchaseLogPageState extends State<PurchaseLogPage> {
                       duration: const Duration(milliseconds: 200),
                       style: TextStyle(
                         fontSize: 11,
-                        color: _hoveringAdd ? Colors.white70 : Colors.grey,
+                        color: _hoveringAdd ? Colors.grey : Colors.white70,
                       ),
                       child: const Text("Upload or enter manually"),
                     ),
@@ -779,7 +780,8 @@ class _AddPurchaseDialogState extends State<_AddPurchaseDialog> {
                 Row(children: [
                   const Icon(Icons.attach_file, size: 16, color: Colors.grey),
                   const SizedBox(width: 6),
-                  Text("Uploaded Files", style: TextStyle(fontSize: 12, color: Colors.grey[600])),
+                  Text("Uploaded Files", style: TextStyle(fontSize: 12, color: Colors.grey[600]
+                  )),
                 ]),
                 const SizedBox(height: 6),
                 if (draft.uploadedFiles.isEmpty)
@@ -825,7 +827,6 @@ class _AddPurchaseDialogState extends State<_AddPurchaseDialog> {
                   backgroundColor: const Color(0xFF2A94D4),
                   foregroundColor: Colors.white,
                   disabledBackgroundColor: Colors.green.shade400,
-                  disabledForegroundColor: Colors.white,
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
                 ),
               ),
@@ -1151,7 +1152,6 @@ class PurchaseDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF4F6FB),
       appBar: AppBar(
         backgroundColor: const Color(0xFF2A94D4),
         foregroundColor: Colors.white,
@@ -1180,8 +1180,11 @@ class PurchaseDetailPage extends StatelessWidget {
           // Info grid
           Container(
             padding: const EdgeInsets.all(16),
-            decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(14),
-              boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, 3))]),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(14),
+              border: Border.all(color: const Color(0xFF616161), width: 1),
+              boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, 3))],
+            ),
             child: Column(children: [
               _infoRow(Icons.store_outlined, "Vendor", purchase.vendor),
               _infoRow(Icons.person_outline, "Purchaser", purchase.purchaserName),
@@ -1197,8 +1200,11 @@ class PurchaseDetailPage extends StatelessWidget {
             Container(
               width: double.infinity,
               padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(14),
-                boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, 3))]),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(14),
+                border: Border.all(color: const Color(0xFF616161), width: 1),
+                boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, 3))],
+              ),
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 const Row(children: [
                   Icon(Icons.receipt_long_outlined, size: 16, color: Color(0xFF2A94D4)),
@@ -1214,8 +1220,11 @@ class PurchaseDetailPage extends StatelessWidget {
           Container(
             width: double.infinity,
             padding: const EdgeInsets.all(16),
-            decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(14),
-              boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, 3))]),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(14),
+              border: Border.all(color: const Color(0xFF616161), width: 1),
+              boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, 3))],
+            ),
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               const Row(children: [
                 Icon(Icons.attach_file, size: 16, color: Color(0xFF2A94D4)),
@@ -1228,7 +1237,6 @@ class PurchaseDetailPage extends StatelessWidget {
               else
                 ...purchase.uploadedFiles.map((file) => Card(
                   elevation: 0,
-                  color: const Color(0xFFF0F2FF),
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
                   child: ListTile(
                     dense: true,
